@@ -3,186 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glocal Films UK | Coming Soon</title>
+    <title>Glocal Films UK | Cinematic Excellence</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Glocal Films UK - Cinematic storytellers bringing global quality to local stories. Founded by Partha Panda & Jitendra Mishra.">
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #0a0a0a;
-            --text-primary: #ffffff;
-            --text-secondary: rgba(255, 255, 255, 0.6);
-            --accent: #f0f0f0;
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: 'Inter', sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow-x: hidden;
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        /* Ambient Background Background */
-        .ambient-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #0a0a0a 100%);
-        }
-
-        .glow {
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0) 70%);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-        }
-
-        .container {
-            text-align: center;
-            z-index: 1;
-            padding: 2rem;
-            max-width: 800px;
-        }
-
-        h1 {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            font-size: clamp(2.5rem, 8vw, 5rem);
-            letter-spacing: -0.02em;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(180deg, #fff 0%, #888 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-        }
-
-        .tagline {
-            font-size: 1.1rem;
-            font-weight: 300;
-            color: var(--text-secondary);
-            margin-bottom: 4rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
-        }
-
-        .timer-container {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            margin-bottom: 4rem;
-        }
-
-        .timer-box {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            padding: 2rem;
-            border-radius: 20px;
-            min-width: 120px;
-            backdrop-filter: blur(10px);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .timer-box:hover {
-            transform: translateY(-5px);
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .timer-value {
-            font-family: 'Outfit', sans-serif;
-            font-size: 3rem;
-            font-weight: 500;
-            display: block;
-            margin-bottom: 0.2rem;
-        }
-
-        .timer-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: var(--text-secondary);
-        }
-
-        .founders {
-            margin-top: 2rem;
-            border-top: 1px solid var(--glass-border);
-            padding-top: 2rem;
-        }
-
-        .founders-title {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-        }
-
-        .founders-names {
-            font-family: 'Outfit', sans-serif;
-            font-size: 1.4rem;
-            font-weight: 300;
-            letter-spacing: 0.05em;
-        }
-
-        .footer-note {
-            margin-top: 4rem;
-            text-align: center;
-            font-size: 0.7rem;
-            color: rgba(255, 255, 255, 0.2);
-            letter-spacing: 0.1em;
-            line-height: 1.6;
-        }
-
-        .address {
-            display: block;
-            margin-top: 0.5rem;
-            text-transform: uppercase;
-        }
-
-        @media (max-width: 600px) {
-            .timer-container {
-                gap: 0.8rem;
-            }
-            .timer-box {
-                min-width: 80px;
-                padding: 1rem;
-            }
-            .timer-value {
-                font-size: 1.8rem;
-            }
-        }
-    </style>
+    
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="ambient-bg"></div>
-    <div class="glow"></div>
+    <!-- Background Elements -->
+    <div class="ambient-glow"></div>
+    
+    <!-- Floating Movie Icons -->
+    <svg class="floating-icon icon-1" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 8-5-3"/><path d="m17 11-5-3"/><path d="m12 14-5-3"/><path d="m7 17-5-3"/><path d="M2 8h20"/></svg>
+    <svg class="floating-icon icon-2" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg>
+    <svg class="floating-icon icon-3" width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2v20"/><path d="M2 12h20"/><path d="m16.24 7.76-8.48 8.48"/><path d="m16.24 16.24-8.48-8.48"/></svg>
+    <svg class="floating-icon icon-4" width="55" height="55" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.55a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1H18a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1Z"/><path d="M12 10h-1.55a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1H12a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1Z"/><path d="M6 10H4.45a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1H6a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1Z"/><path d="M3 13h18c.5 0 1 .5 1 1v5c0 1-1 2-2 2H4c-1 0-2-1-2-2v-5c0-.5.5-1 1-1Z"/><path d="M12 13v8"/></svg>
 
-    <div class="container">
-        <h1>Glocal Films UK</h1>
-        <p class="tagline">Going Live Soon</p>
+    <!-- Main Content Container -->
+    <main class="container">
+        <header>
+            <h1>Glocal Films UK</h1>
+            <p class="tagline">Going Live Soon</p>
+        </header>
 
-        <div class="timer-container">
+        <!-- Countdown Component -->
+        <section class="timer-container">
             <div class="timer-box">
                 <span class="timer-value" id="days">00</span>
                 <span class="timer-label">Days</span>
@@ -199,36 +51,38 @@
                 <span class="timer-value" id="seconds">00</span>
                 <span class="timer-label">Secs</span>
             </div>
-        </div>
+        </section>
 
-        <div class="founders">
-            <p class="founders-title">Founders</p>
+        <!-- Dynamic Content Area -->
+        <section class="section-divider">
+            <h2 class="founders-title">Founders</h2>
             <p class="founders-names">Partha Panda & Jitendra Mishra</p>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    <div class="footer-note">
+    <!-- Global Footer -->
+    <footer class="footer">
         <p>&copy; 2026 GLOCAL FILMS UK</p>
-        <p class="address">Head Office: 195 Broadway, Bexleyheath, London, DA6 7ER</p>
-    </div>
+        <address class="address">Head Office: 195 Broadway, Bexleyheath, London, DA6 7ER</address>
+    </footer>
 
+    <!-- Scripts -->
     <script>
-        // Set the countdown date to 3 days from now
         const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000);
 
         function updateTimer() {
             const now = new Date().getTime();
             const distance = countdownDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            const d = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("days").innerText = days.toString().padStart(2, '0');
-            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
-            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
-            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+            document.getElementById("days").innerText = d.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = h.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = m.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = s.toString().padStart(2, '0');
 
             if (distance < 0) {
                 clearInterval(timerInterval);
@@ -237,7 +91,7 @@
         }
 
         const timerInterval = setInterval(updateTimer, 1000);
-        updateTimer(); // Initial call
+        updateTimer();
     </script>
 </body>
 </html>

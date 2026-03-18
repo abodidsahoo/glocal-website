@@ -27,13 +27,14 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             font-family: 'Inter', sans-serif;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            overflow-x: hidden;
             position: relative;
+            padding: 2rem 0;
         }
 
         /* Ambient Background Background */
@@ -145,11 +146,18 @@
         }
 
         .footer-note {
-            position: absolute;
-            bottom: 2rem;
+            margin-top: 4rem;
+            text-align: center;
             font-size: 0.7rem;
-            color: rgba(255, 255, 244, 0.2);
+            color: rgba(255, 255, 255, 0.2);
             letter-spacing: 0.1em;
+            line-height: 1.6;
+        }
+
+        .address {
+            display: block;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
         }
 
         @media (max-width: 600px) {
@@ -199,7 +207,10 @@
         </div>
     </div>
 
-    <p class="footer-note">&copy; 2026 GLOCAL FILMS UK</p>
+    <div class="footer-note">
+        <p>&copy; 2026 GLOCAL FILMS UK</p>
+        <p class="address">Head Office: 195 Broadway, Bexleyheath, London, DA6 7ER</p>
+    </div>
 
     <script>
         // Set the countdown date to 3 days from now
